@@ -101,9 +101,10 @@ html, body {
 }
 .links:hover {
 	color: #000000;
+	text-decoration: underline;
 }
 #other {
-	left: 2%;
+	left: 1%;
 	margin-top: -0.5%;
 	transform: rotate(-90deg);
 }
@@ -114,7 +115,7 @@ html, body {
 }
 #work {
 	transform: rotate(90deg);
-	right: 2%;
+	right: 1%;
 }
 @media only screen and (max-width: 1100px) {
 	html, body {
@@ -161,7 +162,7 @@ html, body {
 	}
 	#hexagons {
 		display: flex;
-	    align-items: center;
+		align-items: center;
 	}
 
 	.hexagon {
@@ -218,6 +219,45 @@ html, body {
 	
 }
 
+@keyframes fadeInRight {
+	0% {
+	  opacity: 1;
+	  transform: translate3d(100%, 0, 0);
+	}
+  
+	100% {
+	  opacity: 1;
+	  transform: none;
+	}
+  }
+  
+
+/** An element that fades in and slides from the right */
+.fadeInRight-element {
+	animation-duration: 0.8s;
+	transition-timing-function: ease;
+	animation-fill-mode: both;
+	animation-name: fadeInRight;
+}
+
+@keyframes fadeOutLeft {
+    0% {
+		opacity: 1;
+		transform: none;
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+.fadeOutLeft-element {
+	animation-duration: 0.8s;
+	transition-timing-function: ease-in;
+	animation-fill-mode: both;
+	animation-name: fadeOutLeft;
+	}
 /*
 
 

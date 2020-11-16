@@ -5,16 +5,22 @@
 	<title>Jasmine Tu - Product Designer</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="home.css" />
+	<script src="home.js" defer></script>
 </head>
-<body class="d-flex align-items-center">
+<body 
+	id="homepage" 
+	class="d-flex
+		align-items-center
+		fadeInRight-element
+	">
 	<img src="logo.png" alt="Logo" id="logo">
 	<img src="border.png" alt="Border" id="border">
-	<a href="other.html"><img src="arrow.png" alt="" id="leftArrow"></a>
-	<a href="projects.html"><img src="arrow.png" alt="" id="bottomArrow"></a>
-	<a href="work.html"><img src="arrow.png" alt="" id="rightArrow"></a>
-	<a href="other.html" id="other" class="links">Other Experiences</a>
-	<a href="projects.html" id="projects" class="links">Featured Projects</a>
-	<a href="work.html" id="work" class="links">Work Experiences</a>
+	<a href="other.html"><img src="arrow.png" alt="" id="leftArrow" class="fadeoutright"></a>
+	<a href="projects.html"><img src="arrow.png" alt="" id="bottomArrow" class="fadeouttop"></a>
+	<a href="work.html"><img src="arrow.png" alt="" id="rightArrow" class="fadeoutleft"></a>
+	<p id="other" class="links fadeoutright">Other Experiences</p>
+	<a href="projects.html" id="projects" class="links fadeouttop">Featured Projects</a>
+	<p id="work" class="links fadeoutleft">Work Experiences</p>
 	<div id="insideContent">
 		<p id="intro1">
 			Hi, I’m <span id="name">Jasmine Tu</span>!
@@ -29,7 +35,7 @@
 		<p id="intro2">
 			I am a <strong>product designer</strong> with research and development background who aims to solve problems from human-centered and data-driven design perspective with futuralistic technology like AI & AR/VR. 
 		</p>
-		<div id="hexagons" class="row d-flex align-items-start">
+		<div id="hexagons" class="row d-flex align-items-start flex-wrap">
 			<div class="hexagon col">
 				<p class="subtitle">
 					Collaborative
